@@ -7,7 +7,5 @@ class Song < ActiveRecord::Base
     end
 
     def number_of_times_sung
-        self.performances.size
-    end
 
 end

@@ -6,8 +6,4 @@ class Song < ActiveRecord::Base
         Song.where("artist_name = '#{artist_name}'")
     end
 
-    def number_of_times_sung
-        self.performances.size
-    end
-
 end

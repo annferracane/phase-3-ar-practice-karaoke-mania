@@ -2,12 +2,8 @@ class Song < ActiveRecord::Base
     has_many :performances
     has_many :karaoke_singers, through: :performances
 
-    def self.find_by_artist(artist_name)
+    def self.find_by_artist
         Song.where("artist_name = '#{artist_name}'")
-    end
-
-    def number_of_times_sung
-        self.performances.size
     end
 
 end

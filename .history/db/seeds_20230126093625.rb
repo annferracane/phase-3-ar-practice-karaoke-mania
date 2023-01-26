@@ -1,0 +1,22 @@
+s1 = Song.create(title: "You Learn", runtime_in_minutes: 3, artist_name: "Alanis")
+s2 = Song.create(title: "Crash", runtime_in_minutes: 3, artist_name: "DMB")
+s3 = Song.create(title: "Unstoppable", runtime_in_minutes: 3, artist_name: "Sia")
+s4 = Song.create(title: "New York, New York", runtime_in_minutes: 3, artist_name: "Frank Sinatra")
+
+
+k1 = KaraokeSinger.create(name: "Ann", number_of_drinks: 1)
+k2 = KaraokeSinger.create(name: "Stu", number_of_drinks: 3)
+k3 = KaraokeSinger.create(name: "Pat", number_of_drinks: 0)
+k4 = KaraokeSinger.create(name: "Rose", number_of_drinks: 2)
+k5 = KaraokeSinger.create(name: "Julia", number_of_drinks: 1)
+
+p1 = Performance.create(song_id: s1.id, karaoke_singer_id: k1.id)
+p2 = Performance.create(song_id: s2.id, karaoke_singer_id: k2.id)
+p3 = Performance.create(song_id: s3.id, karaoke_singer_id: k3.id)
+p4 = Performance.create(song_id: s4.id, karaoke_singer_id: k4.id)
+p5 = Performance.create(song_id: s1.id, karaoke_singer_id: k5.id)
+p6 = Performance.create(song_id: s2.id, karaoke_singer_id: k1.id)
+p7 = Performance.create(song_id: s3.id, karaoke_singer_id: k2.id)
+p8 = Performance.create(song_id: s4.id, karaoke_singer_id: k3.id)
+p9 = Performance.create(song_id: s1.id, karaoke_singer_id: k4.id)
+p1- = Performance.create(song_id: s2.id, karaoke_singer_id: k5.id)

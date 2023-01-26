@@ -22,4 +22,6 @@ class KaraokeSinger < ActiveRecord::Base
         KaraokeSinger.all.map { |singer| singer.drinks_tab(price_per_drink) }.sum
     end
 
+
+
 end
